@@ -1,3 +1,4 @@
+import Dashboard from '@/components/Dashboard'
 import { getPlatformStats } from '@/data/getPlatformStats'
 import { getUserStats } from '@/data/getUserStats'
 import { usePlatformStats } from '@/stores/usePlatformStats'
@@ -16,7 +17,6 @@ interface Props {
 export default function Home({ platformStats, userStats }: Props) {
   const setPlatformStats = usePlatformStats((state) => state.setPlatformStats)
   const setUserStats = useUserStats((state) => state.setUserStats)
-  const totalFollowers = useUserStats((state) => state.totalFollowers)
 
   useEffect(() => {
     ;(async () => {
@@ -27,9 +27,7 @@ export default function Home({ platformStats, userStats }: Props) {
 
   return (
     <div className={styles.home}>
-      <pre>{totalFollowers}</pre>
-      <pre>{JSON.stringify(platformStats, null, 2)}</pre>
-      <pre>{JSON.stringify(userStats, null, 2)}</pre>
+      <Dashboard />
     </div>
   )
 }

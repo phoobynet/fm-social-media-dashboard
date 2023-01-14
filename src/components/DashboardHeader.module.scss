@@ -1,0 +1,15 @@
+.dashboardHeader {
+  @apply grid h-[235px] grid-rows-[4.3rem_2.7rem_auto] rounded-br-3xl rounded-bl-3xl bg-lt-very-pale-blue px-[1.6rem];
+
+  h1 {
+    @apply self-end text-[24px] font-bold;
+  }
+
+  .totalFollowers {
+    @apply -mt-0.5 border-b text-[14px] font-bold text-lt-dark-grayish-blue;
+  }
+
+  .colorScheme {
+    @apply mt-3.5;
+  }
+}

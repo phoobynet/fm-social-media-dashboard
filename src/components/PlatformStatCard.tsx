@@ -1,5 +1,14 @@
 import styles from './PlatformStatCard.module.scss'
+import { PlatformStat } from '@/types/PlatformStat'
 
-export default function PlatformStatCard() {
-  return <div className={styles.platformStatCard}>PlatformStatCard</div>
+interface Props {
+  platformStat: PlatformStat
+}
+
+export default function PlatformStatCard({ platformStat }: Props) {
+  return (
+    <div className={styles.platformStatCard}>
+      {JSON.stringify(platformStat, null, 2)}
+    </div>
+  )
 }
