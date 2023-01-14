@@ -1,2 +1,23 @@
 .userStatCard {
+  @apply h-[216px] w-[326px] overflow-hidden rounded-lg bg-lt-very-pale-blue;
+
+  .topBar {
+    @apply h-[4px] bg-facebook;
+  }
+
+  .content {
+    @apply grid h-full auto-rows-fr place-items-center justify-items-center;
+
+    .followers {
+      @apply text-center;
+
+      > div {
+        @apply text-[56px] font-bold leading-[48px] tracking-[-2px];
+      }
+
+      label {
+        @apply text-[12px] uppercase;
+      }
+    }
+  }
 }
