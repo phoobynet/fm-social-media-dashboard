@@ -1,9 +1,12 @@
 .dashboard {
-  .heading {
+  .header {
+    @apply grid;
   }
   .userStats {
     @apply -mt-[2.7rem];
+    @apply desktop:-mt-[8rem];
   }
   .platformStats {
+    @apply mt-[2.7rem];
   }
 }

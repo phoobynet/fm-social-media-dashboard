@@ -1,2 +1,40 @@
 .platformStatCard {
+  @apply grid h-[125px] w-[326px] cursor-pointer grid-flow-col grid-cols-2 grid-rows-2 rounded-lg bg-lt-very-pale-blue p-6;
+
+  &:hover {
+    @apply bg-lt-hover;
+  }
+
+  .statName {
+    @apply text-[14px] font-bold text-lt-dark-grayish-blue;
+  }
+
+  .statValue {
+    @apply text-[32px] font-bold text-lt-very-dark-blue;
+  }
+
+  .platform {
+    @apply place-self-start justify-self-end;
+    .icon {
+      @apply object-contain;
+    }
+  }
+
+  .changePct {
+    @apply flex items-center gap-1 place-self-end justify-self-end;
+    @apply text-[12px] font-bold;
+    &[data-change-up='true'] {
+      @apply text-lime-green;
+      .changeDownIcon {
+        @apply hidden;
+      }
+    }
+
+    &[data-change-up='false'] {
+      @apply text-bright-red;
+      .changeUpIcon {
+        @apply hidden;
+      }
+    }
+  }
 }

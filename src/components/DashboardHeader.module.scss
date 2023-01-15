@@ -1,15 +1,24 @@
 .dashboardHeader {
-  @apply grid h-[235px] grid-rows-[4.3rem_2.7rem_auto] rounded-br-3xl rounded-bl-3xl bg-lt-very-pale-blue px-[1.6rem];
+  @apply rounded-br-3xl rounded-bl-3xl bg-lt-very-pale-blue px-[1.6rem];
+  @apply grid justify-center;
 
-  h1 {
-    @apply self-end text-[24px] font-bold;
-  }
+  .content {
+    @apply grid h-[235px] w-[326px] grid-rows-[4.3rem_2.7rem_auto];
+    @apply desktop:h-[244px] desktop:w-[1110px] desktop:grid-flow-col desktop:grid-cols-[1fr_8.5rem] desktop:grid-rows-[4rem_auto];
 
-  .totalFollowers {
-    @apply -mt-0.5 border-b text-[14px] font-bold text-lt-dark-grayish-blue;
-  }
+    h1 {
+      @apply self-end text-[24px] font-bold;
+      @apply desktop:text-[28px];
+    }
 
-  .colorScheme {
-    @apply mt-3.5;
+    .totalFollowers {
+      @apply -mt-0.5 border-b text-[14px] font-bold text-lt-dark-grayish-blue;
+      @apply desktop:border-none;
+    }
+
+    .colorScheme {
+      @apply mt-3.5;
+      @apply desktop:col-start-2 desktop:self-end;
+    }
   }
 }

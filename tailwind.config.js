@@ -31,6 +31,7 @@ module.exports = {
       'lt-grayish-blue': 'hsl(227, 47%, 96%)',
       'lt-dark-grayish-blue': 'hsl(228, 12%, 44%)',
       'lt-very-dark-blue': 'hsl(230, 17%, 14%)',
+      'lt-hover': 'hsl(228, 33%, 91%)',
 
       // toggle
       'toggle-start': 'hsl(210, 78%, 56%)',

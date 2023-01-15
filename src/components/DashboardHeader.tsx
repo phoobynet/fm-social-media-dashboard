@@ -16,17 +16,19 @@ export default function DashboardHeader() {
 
   return (
     <div className={styles.dashboardHeader}>
-      <h1>Social Media Dashboard</h1>
-      <div className={styles.totalFollowers}>
-        Total Followers: {totalFollowersFormatted}
-      </div>
-      <div className={styles.colorScheme}>
-        <Toggle
-          label={modeLabel}
-          id="modeToggle"
-          value={darkMode}
-          onChange={(value) => setDarkMode(value)}
-        />
+      <div className={styles.content}>
+        <h1>Social Media Dashboard</h1>
+        <div className={styles.totalFollowers}>
+          Total Followers: {totalFollowersFormatted}
+        </div>
+        <div className={styles.colorScheme}>
+          <Toggle
+            label={modeLabel}
+            id="modeToggle"
+            value={darkMode}
+            onChange={(value) => setDarkMode(value)}
+          />
+        </div>
       </div>
     </div>
   )

@@ -11,12 +11,17 @@ export default function PlatformStatCards() {
 
   return (
     <div className={styles.platformStatCards}>
-      {platformStats.map((platformCard, i) => (
-        <PlatformStatCard
-          platformStat={platformCard}
-          key={i}
-        />
-      ))}
+      <header className={styles.header}>
+        <h2>Overview - Today </h2>
+      </header>
+      <div className={styles.cards}>
+        {platformStats.map((platformCard, i) => (
+          <PlatformStatCard
+            platformStat={platformCard}
+            key={i}
+          />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,3 +1,13 @@
 .platformStatCards {
-  @apply grid;
+  @apply grid justify-items-center gap-6;
+  .header {
+    @apply w-[326px];
+    h2 {
+      @apply text-2xl font-bold text-lt-dark-grayish-blue;
+    }
+  }
+
+  .cards {
+    @apply grid justify-items-center gap-4;
+  }
 }

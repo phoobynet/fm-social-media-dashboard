@@ -1,21 +1,11 @@
 import styles from './UserStatCard.module.scss'
 import iconDown from '@/assets/icon-down.svg'
-import iconFacebook from '@/assets/icon-facebook.svg'
-import iconInstagram from '@/assets/icon-instagram.svg'
-import iconTwitter from '@/assets/icon-twitter.svg'
 import iconUp from '@/assets/icon-up.svg'
-import iconYoutube from '@/assets/icon-youtube.svg'
+import { iconMap } from '@/lib/iconMap'
 import { UserStat } from '@/types/UserStat'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import numeral from 'numeral'
 import { useMemo } from 'react'
-
-const iconMap: Record<string, StaticImageData> = {
-  instagram: iconInstagram,
-  twitter: iconTwitter,
-  youtube: iconYoutube,
-  facebook: iconFacebook,
-}
 
 interface Props {
   userStat: UserStat

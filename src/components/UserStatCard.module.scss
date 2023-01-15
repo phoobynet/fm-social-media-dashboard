@@ -1,5 +1,9 @@
 .userStatCard {
-  @apply h-[216px] w-[326px] overflow-hidden rounded-lg bg-lt-very-pale-blue;
+  @apply h-[216px] w-[326px] cursor-pointer overflow-hidden rounded-lg bg-lt-very-pale-blue;
+
+  &:hover {
+    @apply bg-lt-hover;
+  }
 
   .topBar {
     @apply h-[4px] bg-facebook;
