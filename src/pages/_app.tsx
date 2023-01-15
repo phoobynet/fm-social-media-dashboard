@@ -1,8 +1,16 @@
+import { useColorScheme } from '@/stores/useColorScheme'
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
+  const loadColorScheme = useColorScheme((state) => state.loadColorScheme)
+
+  useEffect(() => {
+    loadColorScheme()
+  }, [])
+
   return (
     <>
       <Head>

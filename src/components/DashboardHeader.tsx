@@ -1,17 +1,20 @@
 import styles from './DashboardHeader.module.scss'
 import Toggle from '@/components/Toggle'
+import { useColorScheme } from '@/stores/useColorScheme'
 import { useUserStats } from '@/stores/useUserStats'
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 
 export default function DashboardHeader() {
   const totalFollowersFormatted = useUserStats(
     (state) => state.totalFollowersFormatted,
   )
 
-  const [darkMode, setDarkMode] = useState<boolean>(false)
+  const isDark = useColorScheme((state) => state.isDark)
+  const setIsDark = useColorScheme((state) => state.setIsDark)
+
   const modeLabel = useMemo(
-    () => (darkMode ? 'Light Mode' : 'Dark Mode'),
-    [darkMode],
+    () => (isDark ? 'Light Mode' : 'Dark Mode'),
+    [isDark],
   )
 
   return (
@@ -25,8 +28,8 @@ export default function DashboardHeader() {
           <Toggle
             label={modeLabel}
             id="modeToggle"
-            value={darkMode}
-            onChange={(value) => setDarkMode(value)}
+            value={isDark}
+            onChange={(value) => setIsDark(value)}
           />
         </div>
       </div>

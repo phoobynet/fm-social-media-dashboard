@@ -1,9 +1,11 @@
 .userStatCard {
   @apply h-[216px] w-[326px] cursor-pointer overflow-hidden rounded-lg bg-lt-grayish-blue;
   @apply desktop:w-[255px];
+  @apply dark:bg-dt-dark-desaturated-blue;
 
   &:hover {
     @apply bg-lt-hover;
+    @apply dark:bg-dt-hover;
   }
 
   .topBar {
@@ -38,17 +40,17 @@
     @apply grid h-full auto-rows-fr place-items-center justify-items-center;
 
     .name {
-      @apply flex gap-2 text-[12px];
+      @apply flex gap-2 text-[12px] font-bold text-lt-dark-grayish-blue;
+      @apply dark:text-dt-desaturated-blue;
 
       .platformIcon {
         @apply object-contain;
       }
-
-      @apply font-bold text-lt-dark-grayish-blue;
     }
 
     .followers {
-      @apply text-center;
+      @apply text-center text-dt-very-dark-blue;
+      @apply dark:text-white;
 
       .followersCount {
         @apply text-[56px] font-bold leading-[48px] tracking-[-2px];
@@ -56,6 +58,7 @@
 
       .followersLabel {
         @apply text-[12px] uppercase tracking-[5px] text-lt-dark-grayish-blue;
+        @apply dark:text-dt-desaturated-blue;
       }
     }
 

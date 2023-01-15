@@ -1,5 +1,6 @@
 .dashboardHeader {
   @apply rounded-br-3xl rounded-bl-3xl bg-lt-very-pale-blue px-[1.6rem];
+  @apply dark:bg-dt-very-darker-blue;
   @apply grid justify-center;
 
   .content {
@@ -9,11 +10,13 @@
     h1 {
       @apply self-end text-[24px] font-bold;
       @apply desktop:text-[28px];
+      @apply dark:text-white;
     }
 
     .totalFollowers {
       @apply -mt-0.5 border-b text-[14px] font-bold text-lt-dark-grayish-blue;
       @apply desktop:border-none;
+      @apply dark:text-dt-desaturated-blue;
     }
 
     .colorScheme {

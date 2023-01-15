@@ -1,17 +1,21 @@
 .platformStatCard {
   @apply grid h-[125px] w-[326px] cursor-pointer grid-flow-col grid-cols-2 grid-rows-2 rounded-lg bg-lt-grayish-blue p-6;
   @apply desktop:w-[255px];
+  @apply dark:bg-dt-dark-desaturated-blue;
 
   &:hover {
     @apply bg-lt-hover;
+    @apply dark:bg-dt-hover;
   }
 
   .statName {
     @apply text-[14px] font-bold text-lt-dark-grayish-blue;
+    @apply dark:text-dt-desaturated-blue;
   }
 
   .statValue {
     @apply text-[32px] font-bold text-lt-very-dark-blue;
+    @apply dark:text-white;
   }
 
   .platform {

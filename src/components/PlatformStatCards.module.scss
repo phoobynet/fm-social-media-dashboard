@@ -6,6 +6,7 @@
     @apply desktop:w-[1110px];
     h2 {
       @apply text-2xl font-bold text-lt-dark-grayish-blue;
+      @apply dark:text-white;
     }
   }
 

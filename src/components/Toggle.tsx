@@ -1,4 +1,5 @@
 import styles from './Toggle.module.scss'
+import { useColorScheme } from '@/stores/useColorScheme'
 
 interface Props {
   id: string
@@ -11,6 +12,7 @@ export default function Toggle({ id, label, value, onChange }: Props) {
   const handleClick = () => {
     onChange(!value)
   }
+
   return (
     <div className={styles.toggle}>
       <label

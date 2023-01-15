@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class', '[data-mode="true"]'],
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
@@ -23,6 +24,7 @@ module.exports = {
       'dt-dark-desaturated-blue': 'hsl(228, 28%, 20%)',
       // Text
       'dt-desaturated-blue': 'hsl(228, 34%, 66%)',
+      'dt-hover': 'hsl(228, 25%, 27%)',
 
       white: 'hsl(0, 0%, 100%)',
 
