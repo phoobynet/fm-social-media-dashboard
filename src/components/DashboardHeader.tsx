@@ -10,7 +10,7 @@ export default function DashboardHeader() {
 
   const [darkMode, setDarkMode] = useState<boolean>(false)
   const modeLabel = useMemo(
-    () => (darkMode ? 'Dark Mode' : 'Light Mode'),
+    () => (darkMode ? 'Light Mode' : 'Dark Mode'),
     [darkMode],
   )
 

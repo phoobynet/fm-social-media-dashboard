@@ -5,18 +5,71 @@
     @apply h-[4px] bg-facebook;
   }
 
+  &[data-platform='facebook'] {
+    .topBar {
+      @apply bg-facebook;
+    }
+  }
+
+  &[data-platform='instagram'] {
+    .topBar {
+      @apply bg-gradient-to-r from-instagram-start to-instagram-end;
+    }
+  }
+
+  &[data-platform='twitter'] {
+    .topBar {
+      @apply bg-twitter;
+    }
+  }
+
+  &[data-platform='youtube'] {
+    .topBar {
+      @apply bg-youTube;
+    }
+  }
+
   .content {
     @apply grid h-full auto-rows-fr place-items-center justify-items-center;
+
+    .name {
+      @apply flex gap-2 text-[12px];
+
+      .platformIcon {
+        @apply object-contain;
+      }
+
+      @apply font-bold text-lt-dark-grayish-blue;
+    }
 
     .followers {
       @apply text-center;
 
-      > div {
+      .followersCount {
         @apply text-[56px] font-bold leading-[48px] tracking-[-2px];
       }
 
-      label {
-        @apply text-[12px] uppercase;
+      .followersLabel {
+        @apply text-[12px] uppercase tracking-[5px] text-lt-dark-grayish-blue;
+      }
+    }
+
+    .change {
+      @apply flex items-center gap-1 text-[12px] font-bold;
+
+      &[data-up='true'] {
+        @apply text-lime-green;
+        .changeDownIcon {
+          @apply hidden;
+        }
+      }
+
+      &[data-up='false'] {
+        @apply text-bright-red;
+
+        .changeUpIcon {
+          @apply hidden;
+        }
       }
     }
   }
