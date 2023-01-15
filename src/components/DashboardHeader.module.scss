@@ -4,7 +4,7 @@
 
   .content {
     @apply grid h-[235px] w-[326px] grid-rows-[4.3rem_2.7rem_auto];
-    @apply desktop:h-[244px] desktop:w-[1110px] desktop:grid-flow-col desktop:grid-cols-[1fr_8.5rem] desktop:grid-rows-[4rem_auto];
+    @apply desktop:h-[244px] desktop:w-[1110px] desktop:grid-flow-col desktop:grid-cols-[1fr_9rem] desktop:grid-rows-[4rem_auto];
 
     h1 {
       @apply self-end text-[24px] font-bold;
@@ -18,7 +18,7 @@
 
     .colorScheme {
       @apply mt-3.5;
-      @apply desktop:col-start-2 desktop:self-end;
+      @apply desktop:col-start-2 desktop:self-end desktop:pr-1.5;
     }
   }
 }

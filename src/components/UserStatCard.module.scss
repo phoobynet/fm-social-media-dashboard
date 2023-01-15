@@ -1,5 +1,6 @@
 .userStatCard {
-  @apply h-[216px] w-[326px] cursor-pointer overflow-hidden rounded-lg bg-lt-very-pale-blue;
+  @apply h-[216px] w-[326px] cursor-pointer overflow-hidden rounded-lg bg-lt-grayish-blue;
+  @apply desktop:w-[255px];
 
   &:hover {
     @apply bg-lt-hover;

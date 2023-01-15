@@ -1,13 +1,16 @@
 .platformStatCards {
   @apply grid justify-items-center gap-6;
+
   .header {
     @apply w-[326px];
+    @apply desktop:w-[1110px];
     h2 {
       @apply text-2xl font-bold text-lt-dark-grayish-blue;
     }
   }
 
   .cards {
-    @apply grid justify-items-center gap-4;
+    @apply grid gap-y-4;
+    @apply desktop:w-[1110px] desktop:grid-cols-4 desktop:grid-rows-2 desktop:gap-6;
   }
 }

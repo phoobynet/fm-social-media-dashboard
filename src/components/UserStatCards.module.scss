@@ -1,3 +1,4 @@
 .userStatCards {
-  @apply grid justify-items-center gap-6;
+  @apply grid gap-6;
+  @apply desktop:w-[1110px] desktop:auto-cols-fr desktop:grid-cols-4 desktop:grid-rows-1;
 }

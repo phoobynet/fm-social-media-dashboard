@@ -1,5 +1,6 @@
 .platformStatCard {
-  @apply grid h-[125px] w-[326px] cursor-pointer grid-flow-col grid-cols-2 grid-rows-2 rounded-lg bg-lt-very-pale-blue p-6;
+  @apply grid h-[125px] w-[326px] cursor-pointer grid-flow-col grid-cols-2 grid-rows-2 rounded-lg bg-lt-grayish-blue p-6;
+  @apply desktop:w-[255px];
 
   &:hover {
     @apply bg-lt-hover;

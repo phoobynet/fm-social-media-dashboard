@@ -3,8 +3,8 @@
     @apply grid;
   }
   .userStats {
-    @apply -mt-[2.7rem];
-    @apply desktop:-mt-[8rem];
+    @apply -mt-[2.7rem] grid justify-center;
+    @apply desktop:-mt-[7rem];
   }
   .platformStats {
     @apply mt-[2.7rem];
